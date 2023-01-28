@@ -1,0 +1,187 @@
+* {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    width: 670px;
+}
+
+.container * {
+    background: transparent;
+}
+
+.container img {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    position: inherit;
+    width: 50%;
+}
+
+.container .mobile {
+    display: none;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 50%;
+}
+
+.details .description {
+    margin-bottom: 0;
+    margin-right: 35px;
+}
+
+.pricing {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.pricing p {
+    flex-basis: 30%;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+h1, h2 {
+    font-family: "Fraunces", sans-serif;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+
+h2 {
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 15px 0;
+    background: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.checkout * {
+    cursor: pointer;
+}
+
+.checkout img {
+    width: 5%;
+    height: 10%;
+}
+
+.checkout img, button {
+    padding: 5px;
+}
+
+button {
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    border: none;
+}
+
+.checkout:hover {
+    background: hsl(159, 97%, 15%);
+}
+
+@media screen and (max-width: 670px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        min-width: 260px;
+    }
+
+    .container img {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        border-bottom-left-radius: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .container .mobile {
+        display: flex;
+    }
+
+    .container .desktop {
+        display: none;
+    }
+
+    .details {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .details * {
+        margin: 5px 0;
+    }
+
+    .details .type {
+        margin-top: 0;
+    }
+
+    .details .description {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .pricing {
+        margin: 10px 0;
+        padding-top: 5px;
+    }
+
+    .pricing * {
+        margin: 0 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .checkout {
+        padding: 5px 0;
+    }
+
+    .checkout img {
+        width: 5%;
+        height: 10%;
+    }
+}
+
+
+
